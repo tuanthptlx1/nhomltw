@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Document</title>
-       <link rel="stylesheet" href="./asset/css/style.css">
-       <link rel="stylesheet" href="./asset/css/footer.css">
-       <link rel="stylesheet" href="./asset/css/header.css">
+       <link rel="stylesheet" href="../css/style.css">
+       <link rel="stylesheet" href="../css/footer.css">
+       <link rel="stylesheet" href="../css/header.css">
 </head>
-
 <body>
        <div class="start-header">
               <div class="header">
                      <a href="" class="logo0">
-                            <img src="./asset/img/Frame.png" alt="Logo Shop Giày">
+                            <img src="../img1/Frame.png" alt="Logo Shop Giày">
                      </a>
                      <nav class="header-nav">
                             <a href="#">Find a Store</a><span>|</span>
@@ -29,7 +27,7 @@
                      <div class="nav-container">
                             <div class="logo">
                                    <a href="">
-                                          <img src="./asset/img/Vector (4).png" alt="Shop Bán Giày Logo">
+                                          <img src="../img1/Vector (4).png" alt="Shop Bán Giày Logo">
                                    </a>
                             </div>
                             <div class="header-mid">
@@ -45,12 +43,12 @@
                                           <div class="right-container">
                                                  <form class="search-form">
                                                         <div class="search-formin">
-                                                               <input type="search" placeholder="Search..."
-                                                                      aria-label="Search">
+                                                               <input type="search" id="search-input" placeholder="Search..."
+                                                                      aria-label="Search" value="">
                                                                <button type="submit" aria-label="Search"
                                                                       style="background-color: white;">
                                                                       <div class="search-icon"><img
-                                                                                    src="./asset/img/Vector (5).png"
+                                                                                    src="../img1/Vector (5).png"
                                                                                     alt="Search Icon"></div>
                                                                </button>
                                                         </div>
@@ -59,33 +57,54 @@
                                    </div>
                             </div>
                             <div class="icons">
-                                   <img src="./asset/img/Vector.png" alt="Shopping Cart">
-                                   <img src="./asset/img/Vector (1).png" alt="User Profile">
+                                   <img src="../img1/Vector.png" alt="Shopping Cart">
+                                   <img src="../img1/Vector (1).png" alt="User Profile">
                             </div>
                      </div>
               </div>
        </div>
        <div class="form-all">
-       <div class="container">
-              <div>
-                     <img src="./asset/img/Vector (2).png" alt="" srcset="">
+              <div class="container">
+                     <div>
+                            <img src="../img1/Remove-bg.ai_1713580532791.png" alt="" srcset="">
+                     </div>
+                     <h2>BECOME A NIKE MEMBER</h2>
+                     <p>Create your Nike Member profile and get
+                     first access to the very best of Nike
+                     products, inspiration and community.</p>
+                     <form id="joinus-form" action="join.php" method="post" style="width: 324px;">
+                            <label for="new_email"></label>
+                            <input type="email" id="new_email" name="new_email" placeholder="Email address" required>
+                            <label for="new_password"></label>
+                            <input type="password" id="new_password" name="new_password" placeholder="Password" required>
+                            <label for="first_name"></label>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                            <label for="last_name"></label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                            <label for="dob"></label>
+                            <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+                            <label for="country"></label>
+                            <p>Get a Nike Member Reward every year on your Birthday.</p>
+                            <select id="country" name="country" required>
+                                   <option value="india">India</option>
+                                   <option value="usa">USA</option>
+                                   <option value="uk">UK</option>
+                                   <option value="canada">Canada</option>
+                            </select>
+                            <div class="gender">
+                                   <label for="gender"></label>
+                                   <input type="submit" id="male" name="gender" value="male" placeholder="Male" required>
+                                   <label for="male"></label>
+                                   <input type="submit" id="female" name="gender" value="female" placeholder="Female" required>
+                                   <label for="female"></label>
+                            </div>
+                            <div id="checkbox"><input type="checkbox"><span>Sign up for emails to get updates from Nike on products, offers and your Member benefits</span></div>
+                            <p>By creating an account, you agree to Nike's<a href="">Privacy Policy</a> and <a href> Terms of Use</a>
+                            </p>
+                            <button type="submit" >Join Us</button>
+                            <P>Already a Member? <a href="" style="color:black "> Join Us</a></P>
+                     </form>
               </div>
-              <h2>YOUR ACCOUNT FOR EVERYTHING NIKE</h2>
-              <form id="sign-form" style="width: 324px;">
-                     <label for="sign_username"></label>
-                     <input type="email" id="email" placeholder="Email address" required>
-                     <label for="sign_password"></label>
-                     <input type="password" id="password" placeholder="Password" required>
-                     <div id="checkbox"><input type="checkbox">Keep me signed in<a href="">Forgottten
-                                   your password?</a></div>
-                     <p>By logging in , you agree to Nike's <a href="">Privacy Policy</a> and <a href> Terms of Use</a>
-                     </p>
-                     <a href=""></a>
-                     <button type="submit">SIGN IN</button>
-                     </a>
-                     <P>Not a Member? <a href="" style="color:black "> Join Us</a></P>
-              </form>
-       </div>
        </div>
        <div class="footer-A">
               <div class="footer-B">
@@ -116,16 +135,16 @@
                             <div class="footer-i">
                                    <div class="footer-icon">
                                           <a href="">
-                                                 <img src="./asset/img/Frame (1).png" alt="">
+                                                 <img src="../img1/Frame (1).png" alt="">
                                           </a>
                                           <a href="">
-                                                 <img src="./asset/img/Frame (2).png" alt="">
+                                                 <img src="../img1/Frame (2).png" alt="">
                                           </a>
                                           <a href="">
-                                                 <img src="./asset/img/Frame (3).png" alt="">
+                                                 <img src="../img1/Frame (3).png" alt="">
                                           </a>
                                           <a href="">
-                                                 <img src="./asset/img/Frame (4).png" alt="">
+                                                 <img src="../img1/Frame (4).png" alt="">
                                           </a>
                                    </div>
                             </div>
@@ -141,5 +160,8 @@
                      </div>
               </div>
        </div>
+       <script src="./asset/js/search.js"> 
+       </script>
 </body>
+
 </html>
