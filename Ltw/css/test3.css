@@ -1,0 +1,75 @@
+.member-access p{
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 5%; 
+ 
+  }
+
+  .product-hot {
+    width: 60%; 
+  }
+  .product-hot img{
+    width: 100%;
+  }
+  .introduce {
+    width: 30%;
+    display: flex; 
+    flex-direction: column; 
+   
+  }
+
+  .two-product img {
+    width: 40%; 
+    margin-right: 2%; 
+  }
+
+
+  .introduce-text {
+   margin-top: 15%;
+  }
+ 
+  .view a {
+    display: inline-block;
+    padding: 10px 0px;
+    color:black;
+    margin-top: 10%; 
+     
+  }
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+    }
+
+    .product-hot, .introduce {
+        flex: none;
+    }
+
+    .product-hot {
+        width: 60%; 
+    }
+
+    .introduce {
+        width: 30%; 
+    }
+
+    .two-product img {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    .introduce-text, .view a {
+        margin-top: 5%; 
+        font-size:12px;
+    }
+}
