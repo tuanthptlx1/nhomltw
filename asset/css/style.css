@@ -1,0 +1,92 @@
+.form-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#sign-form,
+#joinus-form,
+.container {
+    display: flex;
+    flex-direction: column;
+}
+#sign-form,
+#joinus-form,
+.container a{
+    font-size: 12px;
+    color: #8D8D8D;
+}
+#sign-form button,#joinus-form button {
+    color: white;
+    background-color: #111111;
+}
+#checkbox input{
+margin: 0;
+}
+#checkbox{
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    position: relative;
+}
+#checkbox a{
+    position:absolute;
+    right: 0%;
+    text-decoration: none;
+}
+#sign-form button,
+#email,
+#password,
+#joinus-form button,
+#new_email,
+#new_password,
+#first_name,
+#last_name,
+#dob,
+#country {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.gender {
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#male {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    margin-right: 10px;
+}
+
+#female {
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+#male,
+#female {
+    background-color: white;
+    position: relative;
+    color: gray;
+    border-radius: 3px;
+    height: 40px;
+    border: 1px solid gray;
+}
+@media(max-width:800px)

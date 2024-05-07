@@ -1,0 +1,94 @@
+.skin{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.skin-1{
+    display: flex;
+    width:95% ;
+    float: left;
+}
+.skin-info{
+    width: 60%;
+}
+.info-skin1{
+    width: 100%;
+    display: flex;
+    gap:10px;
+    overflow: hidden;
+}
+.image-list{
+    margin-left: 20px;
+    width: 10%;
+}
+.image-list img{
+    width: 70%;
+    cursor: pointer;
+}
+.image-display{
+    position: relative;
+    width:70% ;
+}
+.image-display img{
+    width: 100%;
+
+}
+----------------------------------------------
+.choose-size{
+    width: 30%;
+    display: grid;
+}
+.info-price{
+    display: grid;
+}
+.info-size{
+    display: flex;
+    justify-content: space-between;
+}
+.info-size a{
+    text-decoration: none;
+    color: gray;
+}
+.choose-size input[type="radio"] {
+    display: none;
+}
+label {
+    display: inline-block;
+    width: 21vh; /* Kích thước */
+    height: 5vh; /* Kích thước */
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px; 
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 1vh;
+}
+    label span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+    
+
+/* Định dạng khi input type radio được chọn */
+input[type="radio"]:checked + label {
+    border:2px solid black ;
+    color:black;
+}
+.choose-size1 {
+    display: flexbox;
+
+}    
+.button-inchoose{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.button-inchoose button{
+    width: 100%;
+    border-radius: 20px;
+    height:6vh ;
+}

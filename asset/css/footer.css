@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.footer-A{
+background-color: black;
+position:relative;
+width: 100%;
+}
+.footer-B{
+    width: 95%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.footer{
+display: flex;
+}
+.footer-A a {
+    color: white;
+    text-decoration: none;
+}
+.footer-T1,
+.footer-T2,
+.footer-T3{
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+}
+.footer-i{
+    width: 43%;
+}
+.footer-T1 a {
+    margin-bottom: 40px;
+}
+.footer-T2 span,
+.footer-T3 span {
+    margin-top: 20px;
+}
+
+.footer span,
+.footer-text a,
+.footer-end span {
+    position:relative;
+    color: #7E7E7E;
+}
+
+.footer-i{
+    position: relative;
+}
+.footer-icon {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.footer-icon img{
+    margin-left: 15px;
+}
+.footer-text a
+{   
+    float:right ;
+    margin-left: 20px;
+}
+.footer-text span,footer-icon {
+    float: left;
+}
+@media (max-width: 882px) {
+    .footer-A {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        overflow: hidden;
+    }
+    .footer-B,
+    .footer-end {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:510px) {
+    .footer-icon {
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+    }
+}
+.footer-A a,.footer-A span{
+    font-size:12px;
+}
+.footer-A p{
+    font-size:10px;
+}

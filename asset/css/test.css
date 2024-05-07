@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100vh;
+}
+/*----------------------------------------------------*/
+#header-trueform,
+#header1-trueform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+#header{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    list-style: none;
+    display: flex;
+}
+#menu .item{
+    margin: 10px;
+}
+#header a{
+    text-decoration: none;
+    color: gray;
+}
+#menu .item a{
+    text-decoration: none;
+    color: grey;
+    
+}
+
+/*------------------------------------------*/
+
+#header1{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#menu1{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+}
+#menu1 .item1{
+    margin: 0px 25px;
+}
+#menu1 .item1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+#menu1 .item1 button {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent
+}
+
+#menu1 .item1 button:hover {
+    border-bottom-color: #666; 
+}
+
+#header1 .logo img{
+    height: 50px;
+    width: 70px;
+}
+
+#header1 #icon .item1{
+    margin-right: 22px;
+}
+#header1 #icon .item1 i{
+    font-size: 25px;
+    color: gray
+}
+
+
+/* Media query cho màn hình điện thoại có kích thước từ 481px đến 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #header1 {
+        padding: 10px 20px; /* Giảm padding để giảm độ rộng của header */
+    }
+
+    #menu1 .item1 button {
+        border-bottom-width: 0.8px; /* Giảm độ dày của viền dưới */
+    }
+}
+
+
+/* Media query cho màn hình điện thoại có kích thước <= 480px */
+@media only screen and (max-width: 480px) {
+    #header1 {
+        padding: 10px 15px; /* Giảm padding để giảm độ rộng của header */
+    }
+
+    #menu1 {
+        flex-direction: column; /* Đổi hướng của flexbox thành dọc */
+        align-items: center; /* Canh giữa các phần tử */
+    }
+
+    #menu1 .icon .item1 {
+        margin: 10px 0; /* Điều chỉnh khoảng cách giữa các mục */
+    }
+
+    #menu1 .item1 button {
+        width: 100%; /* Đặt chiều rộng của button về 100% */
+        text-align: center; 
+    }
+}
+
+
+
+
+
+/*----------------------------------------------------------------*/
+.form-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    width: 90%;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 30px 15px 0px 65px;
+}
+#menu1 .item1 button{
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+ul.product li img{
+    max-width: 100%;
+    height: auto;
+}   
+
+ul.product li{
+    margin-top: 15px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+ul.product .product-info button{
+    border: none;
+    border-radius: 30px;
+    background-color: black;
+    font-weight: bold;
+    padding: 7.5px 22.3281px 7.5px 22.5px;
+    width: 124.83px;
+    height: 39px;
+    margin-top: 30px;
+}
+
+ul.product .product-info button a{
+    color: #fff;
+    text-decoration: none;
+}
+ul.product .product-info button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: #fff;
+}
+
+ul.product .product-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-content a {
+    margin-top: 25px;
+}
+/*-------------------------------------------------------*/
+
+
+
+.load{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.load a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-------------------------------------------------------*/
+
+
