@@ -37,6 +37,7 @@
 .choose-size{
     width: 30%;
     display: grid;
+    
 }
 .info-price{
     display: grid;
@@ -91,4 +92,8 @@ input[type="radio"]:checked + label {
     width: 100%;
     border-radius: 20px;
     height:6vh ;
+}
+.text-info{
+    line-height: 2;
+    float: left;
 }
