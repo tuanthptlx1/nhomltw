@@ -97,3 +97,41 @@ input[type="radio"]:checked + label {
     line-height: 2;
     float: left;
 }
+.slideshow {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slideshow-container {
+    width: 95%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    gap:20px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .prev { left: 0; }
+  .next { right: 0; }
+  
