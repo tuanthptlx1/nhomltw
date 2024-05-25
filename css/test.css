@@ -190,6 +190,13 @@ ul.product li img{
     width: 480px; 
 }   
 
+.product li:nth-child(15),
+.product li:nth-child(14),
+.product li:nth-child(13) {
+    display: none;
+}
+
+
 ul.product li{
     margin-top: 15px;
     text-align: center;
@@ -220,6 +227,9 @@ ul.product .product-content h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
 
 
 @media (max-width: 768px) {
