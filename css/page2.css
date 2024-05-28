@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100vh;
+}
+/*----------------------------------------------------*/
+#header{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.logo{
+    position: relative;
+    left:2.5%;
+}
+#menu{
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+#menu .item{
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    right: 9%;
+}
+
+#menu .item img{
+    width: 20px;
+}
+
+#header a{
+    text-decoration: none;
+    color: gray;
+    white-space: nowrap;
+}
+#menu .item a{
+    text-decoration: none;
+    color: grey;
+    
+}
+
+/*------------------------------------------*/
+
+#header1{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+#menu1{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+}
+#menu1 .item1{
+    margin: 0px 25px;
+}
+#menu1 .item1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+#menu1 .item1 button {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent
+}
+
+#menu1 .item1 button:hover {
+    border-bottom-color: #666; 
+}
+
+.logo1{
+    position: relative;
+    left: 2.5%;
+}
+
+#header1 .logo1 img{
+    height: 50px;
+    width: 70px;
+}
+
+#header1 #icon{
+    position: relative;
+    right: 2.5%;
+}
+
+
+
+@media (max-width: 320px) {
+    /* Header */
+    #header, #header1 {
+        padding: 0 10px; /* Thêm padding cho header và header1 để tránh tràn ra ngoài */
+    }
+
+    .logo, .logo1 {
+        left: 5px; /* Dịch logo về bên trái */
+    }
+
+    #menu, #icon {
+        right: 5px; /* Dịch menu và icon về bên phải */
+    }
+
+    #header1 #icon i {
+        font-size: 20px; /* Giảm kích thước của icon để tránh tràn ra ngoài */
+    }
+
+    /* Header1 */
+    #header1 #icon {
+        margin-right: 15px; /* Tăng khoảng cách bên phải cho phần tử có id icon trong header1 */
+    }
+
+    #menu1 .item1:last-child {
+        margin-right: 0; /* Loại bỏ margin-right của phần tử cuối cùng trong menu1 để tránh tràn ra ngoài */
+    }
+
+    /* Thêm margin cho itemm để tránh tràn ra */
+    #menu .itemm {
+        margin: 10px 0px 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header1 {
+        font-size: 10px;
+    }
+
+    #menu1 .item1 {
+        margin: 0px 10px;
+    }
+
+    #menu1 .item1 button {
+        font-size: 12px;
+    }
+
+    #header1 .logo img {
+        height: 35px;
+    }
+
+    #header1 #icon .item1 {
+        margin-right: 10px;
+    }
+
+    #header1 #icon .item1 i {
+        font-size: 18px;
+    }
+}
+
+
+
+/*----------------------------------------------------------------*/
+
+
+ul.product{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+ul.product li img{
+    max-width: 100%;
+    height: auto;  
+    width: 480px; 
+}   
+
+ul.product li{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: calc(33.33% - 20px);
+}
+
+ul.product .product-info button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.product .product-content a{
+    margin-top: 25px;
+    text-decoration: none;
+    color: black;
+
+}
+ul.product .product-content h2{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    ul.product li {
+        width: calc(50% - 20px); /* Hiển thị hai ảnh mỗi hàng khi màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 320px) {
+    ul.product li {
+        width: calc(100% - 20px); /* Hiển thị một ảnh trên mỗi hàng khi màn hình nhỏ hơn 320px */
+    }
+
+    ul.product li img {
+        width: 100%; /* Đảm bảo ảnh sẽ hiển thị đầy đủ trên màn hình nhỏ */
+    }
+}
+
+
+/*-------------------------------------------------------*/
+
+
+
+.load{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.load a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-------------------------------------------------------*/
+
+footer{
+    height: auto;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    position: absolute;
+    
+    }
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+    .footer-S{
+        display: flex;
+        margin-left: 40px;
+    }
+    .footer-T1,.footer-T2,.footer-T3{
+        margin-top: 20px;
+        margin-right: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-T1 a{
+        margin-bottom:40px ;
+    }
+    .footer-T2 span,.footer-T3 span{
+        margin-top: 20px;
+    }
+    footer span,.footer-text a{
+        color: #7E7E7E;
+    }
+    .footer-icon{
+        position:absolute;
+        right:0;
+        margin-top: 20px;
+    }
+    .footer-end{
+        display:block;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+    .footer-text{
+        text-align:  right;
+    }
+    .footer-text a,.footer-icon a{
+        float: right;
+        margin-right: 20px;
+    }
+    .footer-text span{
+        margin-left: 40px;
+        float:left;
+    }
+    @media (max-width: 882px) {
+         .header, .header1, .right-container {
+            max-width: 100%;
+        }
+        .nav-container {
+            flex-direction: column;
+        }
+        .header-nav a, .header-nav span, .header1-nav a {
+            font-size: 14px; 
+        }
+        footer{
+            max-width:100% ;
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
+        .footer-icon,.footer-end{
+            display:flex;
+            flex-direction: column;
+        }
+    }
+    @media (max-width:380px){
+        .footer-icon{
+            margin-top: 200px;
+        }
+    }
+
+    
+
+
+
+
+
