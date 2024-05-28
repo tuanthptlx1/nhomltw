@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bag, .summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bag {
+    width: 65%;
+}
+
+.summary {
+    width: 30%;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+    font-size: 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.remove {
+    background-color: #fffefe;
+    color: white;
+    border: none;
+    padding: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.remove img{
+    width: 30%;
+    height: auto;
+}
+.checkout {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;    
+}
+
+
+.checkout:hover {
+    background-color: #333; 
+}
+
+.favourites, .recommendations {
+    padding: 10px;
+}
+
+.recommendations img {
+    width: 100%;
+    height: auto;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #060606;
+    background-color: rgb(254, 254, 254);
+    border: none;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.close-btn:hover {
+    background-color: rgb(109, 105, 105);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bag, .summary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .item img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .remove img{
+        width: 60%;
+        height: auto;
+    }
+
+    .price {
+        text-align: center;
+    }
+}
