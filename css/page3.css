@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
 }
 .container {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -147,12 +147,22 @@ body {
 }
 .footer {
     display: flex;
-    /* padding: 20px 0; */
     text-align: center;
     background-color: #000;
     color: #fff;
     margin-top: 20px;
     justify-content: space-between;
+}
+.product{
+    display: flex;
+    word-wrap: break-word; 
+}
+.product a{
+    color: grey;
+}
+.order-summary img{
+    width: auto;
+    height: auto;
 }
 
 .footer .footer-text{
