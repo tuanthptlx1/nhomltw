@@ -7,15 +7,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 .container {
     width: 95%;
     margin: 0 auto;
     padding: 20px;
 }
-#logo img{
+
+#logo img {
     width: 40%;
     height: 30%;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -23,38 +26,44 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     width: 25%;
-    /* background-color: aqua; */
     align-items: center;
 }
-.menu .header-icons{
+
+.menu .header-icons {
     margin-left: 12%;
 }
+
 .header .logo {
     width: 50px;
 }
+
 .header .header-icons {
     display: flex;
     gap: 10px;
 }
+
 .header .header-icon {
     width: 24px;
     height: 24px;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
 }
+
 .content .order-details {
     flex: 1;
     min-width: 300px;
     margin-right: 20px;
 }
+
 .content .order-summary {
     flex: 1;
     min-width: 300px;
@@ -62,44 +71,51 @@ body {
     padding: 20px;
     border: 1px solid #ddd;
 }
+
 .order-summary img {
     width: 100%;
 }
-.form{
+
+.form {
     width: 70%;
     padding: 20px;
-    border: 1px solid #000 ;
+    border: 1px solid #000;
     border-radius: 9px;
 }
-.form img{
+
+.form img {
     align-items: center;
     margin-right: 20px;
 }
 
-.form .delivery-icon{
+.form .delivery-icon {
     text-align: center;
     margin-bottom: -5px;
 }
-.form-group  {
+
+.form-group {
     width: 74%;
     margin: 30px 0px 30px 0px;
-    border: none ;
+    border: none;
     border-radius: 9px;
 }
-.form-group1{
+
+.form-group1 {
     display: flex;
     margin-top: 20px;
 }
 
-.form-group2{
+.form-group2 {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
+
 .form-group input,
 .form-group select {
     width: 100%;
@@ -107,19 +123,23 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
 .form-group small {
     display: block;
     margin-top: 5px;
     color: #888;
 }
+
 .postal-locality {
     display: flex;
     gap: 10px;
 }
-.state-teritory{
+
+.state-teritory {
     display: flex;
     gap: 10px;
 }
+
 .order-btn {
     display: block;
     width: 76%;
@@ -131,20 +151,24 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
+
 .order-summary h3 {
     margin-bottom: 20px;
 }
+
 .order-summary ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .order-summary ul li {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
+
 .footer {
     display: flex;
     text-align: center;
@@ -153,36 +177,41 @@ body {
     margin-top: 20px;
     justify-content: space-between;
 }
-.product{
+
+.product {
     display: flex;
-    word-wrap: break-word; 
+    word-wrap: break-word;
 }
-.product a{
+
+.product a {
     color: grey;
 }
-.order-summary img{
+
+.order-summary img {
     width: auto;
     height: auto;
 }
 
-.footer .footer-text{
+.footer .footer-text {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin: 5px 5px;
     text-align: center;
-    a{
-        justify-content: center;
-        text-align: center;
-        margin-top: 17px;
+}
 
-    }
-    span{
-        margin-top: 17px;
-    }
-    img{
-        width: 10px;
-    }
+.footer .footer-text a {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.footer .footer-text span {
+    margin-top: 17px;
+}
+
+.footer .footer-text img {
+    width: 10px;
 }
 
 .footer .footer-icons {
@@ -191,26 +220,76 @@ body {
     gap: 10px;
     margin: 5px 5px;
 }
+
 .footer img {
     width: 8%;
 }
+
 .footer a {
     color: #fff;
     text-decoration: none;
 }
+
 .footer a:hover {
     text-decoration: underline;
 }
+
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .header .header-icons {
+        justify-content: center;
+    }
+
     .content {
         flex-direction: column;
     }
+
     .content .order-details,
     .content .order-summary {
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .postal-locality {
+
+    .form {
+        width: 100%;
+    }
+
+    .form-group,
+    .form-group1,
+    .form-group2 {
+        width: 100%;
+    }
+
+    .postal-locality,
+    .state-teritory {
         flex-direction: column;
+    }
+
+    .order-btn {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .footer-text {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer .footer-icons {
+        flex-wrap: wrap;
+        gap: 5px;
     }
 }
