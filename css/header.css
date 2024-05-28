@@ -132,19 +132,19 @@ html, body {
     }
 
     .header-nav a, .header-blow-nav a {
-        font-size: 10px;
+        font-size: 8px;
         margin: 5px 5px;
         padding-left: 4px;
     }
 
     .icons {
         flex-direction: row;
-        margin-left: 0;
+        margin-left: 0px;
         justify-content: center;
     }
 
     .search-form input[type="text"] {
-        padding: 8px 28px;
+        padding: 10px 30px;
     }
 
     .search-form, .icons {

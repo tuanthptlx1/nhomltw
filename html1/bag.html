@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/styles33.css">
     <link rel="stylesheet" href="../css/footer.css">
+
 </head>
+
 <body>
     <div class="header-all">
         <header class="header">
@@ -43,35 +46,21 @@
                 <div class="icons">
                     <a href="bag.html"><img src="../imgs/Frame (12).png" alt="Shopping Cart"></a>
                     <a href="bag.html"><img src="../imgs/Frame (13).png" alt="User Profile"></a>
-   
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="container">
-        <div class="bag">
+        <div class="cart">
             <h2>Bag</h2>
-            <div class="item" data-price="3895">
-                <img src="../imgs/Frame (24).png" alt="Nike Dri-FIT ADV TechKnit Ultra">
-                <div class="details">
-                    <p><strong>Nike Dri-FIT ADV TechKnit Ultra</strong></p>
-                    <p>Men's Short-Sleeve Running Top</p>
-                    <p>Ashen Slate/Cobalt Bliss</p>
-                    <p>Size: L </p>
-                    <p>Quantity: 1</p>
-                  <button class="remove"><img src="../imgs/Vector (3).png" alt=""></button>
-                </div> 
-                 <p class="price">MRP: ₹ 3,895.00</p>
-                
-            </div>
-           
+            <div id="cart-items"></div>
         </div>
         <div class="summary">
             <h2>Summary</h2>
-            <p >Subtotal: ₹ 3,895.00</p>
+            <p id="subtotal">Subtotal: ₹ 0.00</p>
             <p>Estimated Delivery & Handling: Free</p>
-            
-            <p><strong>Total: ₹ 3,895.00</strong></p>
+            <hr>
+            <p><strong id="total">Total: ₹ 0.00</strong></p>
             <hr>
             <a href="../html2/test3.html"><button class="checkout">Member Checkout</button></a>
         </div>
@@ -80,71 +69,70 @@
         <h2>Favourites</h2>
         <p>There are no items saved to your favourites.</p>
     </div>
-    <div class="recommendations">
+    <div class="favourites">
         <h2>You Might Also Like</h2>
-        <div class="image-container">
-            <span class="close-btn" onclick="removeImage(this)">&times;</span>
-            <img src="../imgs/Rectangle (20).png" alt="Air Jordan 1 Mid SE Craft">
-            <p>Air Jordan 1 Mid SE Craft<br>Men's Shoes<br>MRP: ₹ 12 295.00</p>
-        </div>
-        
+        <div id="favorite-items"></div>
     </div>
-   
+
     <script src="../js/script33.js"></script>
-        
     <div class="footer-A">
         <div class="footer-B">
-               <div class="footer">
-                      <div class="footer-T1">
-                             <a href="">FIND A STORE</a>
-                             <a href="">BECOME A MEMBER</a>
-                             <a href="">SIGN UP FOR EMAIL</a>
-                             <a href="">SEND US FEEDBACK</a>
-                             <a href="">STUDEN DISCOUNTS</a>
-                      </div>
-                      <div class="footer-T2">
-                             <a href="../html/gethelp.html">GET HELP</a>
-                             <span>Oder Status</span>
-                             <span>Delivery</span>
-                             <span>Returns</span>
-                             <span>Payment Options</span>
-                             <span>Contact Us On Nike.com Inquiries</span>
-                             <span>Contact Us On Ail Other Inquiries</span>
-                      </div>
-                      <div class="footer-T3">
-                             <a href="">ABOUT NIKE</a>
-                             <span>New</span>
-                             <span>Careers</span>
-                             <span>Investors</span>
-                             <span>Sustainability</span>
-                      </div>
-                      <div class="footer-i">
-                             <div class="footer-icon">
-                                    <a href="">
-                                           <img src="../../imgs/Frame (1).png" alt="">
-                                    </a>
-                                    <a href="">
-                                           <img src="../imgs/Frame (2).png" alt="">
-                                    </a>
-                                    <a href="">
-                                           <img src="../imgs/Frame (3).png" alt="">
-                                    </a>
-                                    <a href="">
-                                           <img src="../imgs/Frame (4).png" alt="">
-                                    </a>
-                             </div>
-                      </div>
-               </div>
-               <div class="footer-end">
-                      <div class="footer-text">
-                             <span>&copy;2023 Nike,Inc All Rights Reserved</span>
-                             <a href="">Guides</a>
-                             <a href="">Terms of Sale</a>
-                             <a href="">Terms of Use</a>
-                             <a href="">Nike Privacy Policy</a>
-                      </div>
-               </div>
+            <div class="footer">
+                <div class="footer-T1">
+                    <a href="#">FIND A STORE</a>
+                    <a href="#">BECOME A MEMBER</a>
+                    <a href="#">SIGN UP FOR EMAIL</a>
+                    <a href="#">SEND US FEEDBACK</a>
+                    <a href="#">STUDENT DISCOUNTS</a>
+                </div>
+                <div class="footer-T2">
+                    <a href="../html/gethelp.html">GET HELP</a>
+                    <span>Order Status</span>
+                    <span>Delivery</span>
+                    <span>Returns</span>
+                    <span>Payment Options</span>
+                    <span>Contact Us On Nike.com Inquiries</span>
+                    <span>Contact Us On All Other Inquiries</span>
+                </div>
+                <div class="footer-T3">
+                    <a href="#">ABOUT NIKE</a>
+                    <span>New</span>
+                    <span>Careers</span>
+                    <span>Investors</span>
+                    <span>Sustainability</span>
+                </div>
+                <div class="footer-i">
+                    <div class="footer-icon">
+                        <a href="#">
+                            <img src="../imgs/Frame (1).png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../imgs/Frame (2).png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../imgs/Frame (3).png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../imgs/Frame (4).png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="footer-text">
+                    <span>&copy;2023 Nike, Inc All Rights Reserved</span>
+                    <a href="#">Guides</a>
+                    <a href="#">Terms of Sale</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Nike Privacy Policy</a>
+                </div>
+            </div>
         </div>
-</div>
+    </div>
 </body>
+
+<script src="../js/script33.js">
+
+</script>
+
 </html>
