@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../css/page3.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div id="logo">
+            <img src="../img/logo2.png" alt="Logo" class="logo">
+        </div>
+        <div class="menu">
+            <div class="header-icons">
+                <p>  000 800 100 9538 </p>
+            </div>
+            <div class="header-icons">
+                <img src="../img/messenger.png" alt="Icon1" class="header-icon">
+            </div>
+            <div class="header-icons">
+                <img src="../img/Auto Layout Horizontal.png" alt="Icon1" class="header-icon">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="order-details">
+            <h2>How would you like to get your order?</h2>
+            <p>Customs regulation for India require a copy of the recipient's <br>
+                KYC. The address on the KYC needs to match the shipping <br>
+                address. Our courier will contact you via SMS/email to obtain<br>
+                a copy of your KYC. The KYC will be stored securely and<br> 
+                used solely for the purpose of clearing customs (including<br> 
+                sharing it with customs officials) for all orders and returns. If<br> 
+                your KYC does not match your shipping address, please click<br> 
+                the link for more information. <a href="#">Learn More</a></p>
+            <div class="form">
+                <label for="delivery"><img src="../img/delivery.png" alt="Deliver It Icon" class="delivery-icon"> Deliver It</label>
+            </div>
+            <h3>Enter your name and address:</h3>
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="address-line-1" name="address-line-1" placeholder="Address Line 1">
+                <small>We do not ship to P.O. boxes</small>
+            </div>
+            <div class="form-group">
+                <input type="text" id="address-line-2" name="address-line-2" placeholder="Address Line 2">
+            </div>
+            <div class="form-group">
+                <input type="text" id="address-line-3" name="address-line-3" placeholder="Address Line 3">
+            </div>
+            <div class="form-group postal-locality">
+                <input type="text" id="postal-code" name="postal-code" placeholder="Postal Code">
+                <input type="text" id="locality" name="locality" placeholder="Locality">
+            </div>
+            <div class="form-group state-teritory">
+                <select id="state" name="state">
+                    <option value="state">State/Territory</option>
+                </select>
+                <input type="text" id="country" name="country" value="India" readonly>
+            </div>
+            <div class="form-group1">
+                <label for="save-address"><input type="checkbox" id="save-address" name="save-address"> Save this address to my profile</label>
+            </div>
+            <div class="form-group1">
+                <label for="preferred-address"><input type="checkbox" id="preferred-address" name="preferred-address"> Make this my preferred address</label>
+            </div>
+            <h3>What's your contact information?</h3>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <small>A confirmation email will be sent after checkout.</small>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number">
+                <small>A carrier might contact you to confirm delivery.</small>
+            </div>
+            <h3>What's your PAN?</h3>
+            <div class="form-group">
+                <input type="text" id="pan" name="pan" placeholder="PAN">
+                <small>Enter your PAN to enable payment with UPI, Net Banking or local card methods</small>
+            </div>
+            <div class="form-group2">
+                <label for="save-pan"><input type="checkbox" id="save-pan" name="save-pan"> Save PAN details to Nike Profile</label>
+            </div>
+            <div class="form-group2">
+                <label for="consent"><input type="checkbox" id="consent" name="consent"> I have read and consent to eShopWorld processing my information in accordance with the <a href="#">Privacy Statement</a> and <a href="#">Cookie Policy</a>. eShopWorld is a trusted Nike partner.</label>
+            </div>
+            <button type="submit" class="order-btn">Continue</button>
+        </div>
+
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <ul>
+                <li>
+                    <span>Subtotal</span>
+                    <span>₹ 20 890.00</span>
+                </li>
+                <li>
+                    <span>Delivery/Shipping</span>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <span>Total</span>
+                    <span>₹ 20 890.00</span>
+                </li>
+            </ul>
+            <img src="../img/anh11.png" alt="Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top">
+            <p>Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top<br>Qty 1 | Size L<br>₹ 3 895.00</p>
+            <img src="../img/anh14.png" alt="Nike Air Max 97 SE Men's Shoes">
+            <p>Nike Air Max 97 SE Men's Shoes<br>Qty 1 | Size UK 8<br>₹ 16 995.00</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <a href=""> <img src="../img/Vector.png" alt=""> India </a>
+            <p>© 2023 Nike, Inc. All Rights Reserved</p>
+            <a href="#">Terms of Use</a> <span> | </span>  <a href="#">Terms of Sale</a> <span> | </span> <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-icons">
+            <img src="../img/visa.png" alt="">
+            <img src="../img/visaelectron.png" alt="">
+            <img src="../img/mastercard.png" alt="">
+            <img src="../img/maetro.png" alt="">
+            <img src="../img/americaexpress.png" alt="">
+            <img src="../img/dinerclud.png" alt="">
+            <img src="../img/discover.png" alt="">
+            <img src="../img/banking.png" alt="">
+            <img src="../img/paypal.png" alt="">
+            <img src="../img/upi.png" alt="">
+            <img src="../img/jcb.png" alt="">
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
