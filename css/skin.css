@@ -55,7 +55,7 @@
 }
 label {
     display: inline-block;
-    width: 21vh; /* Kích thước */
+    width: 30%; /* Kích thước */
     height: 5vh; /* Kích thước */
     text-align: center;
     border: 2px solid gray;
@@ -63,6 +63,7 @@ label {
     cursor: pointer;
     background-color: white;
     margin-bottom: 1vh;
+    font-size: 1.5vw;
 }
     label span {
     display: flex;
