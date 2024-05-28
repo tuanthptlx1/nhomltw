@@ -242,10 +242,6 @@ h1 {
     margin-right: auto;
 }
 
-.sold-out:hover {
-    background-color: #bbb;
-}
-
 .product-footer {
     /* display: flex; */
     justify-content: center;
