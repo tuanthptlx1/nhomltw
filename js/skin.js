@@ -35,3 +35,4 @@ function changeSlide(n) {
 
 timer = setTimeout(function() { changeSlide(1); }, 3000);
 showSlides();
+
